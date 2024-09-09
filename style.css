@@ -50,7 +50,7 @@ a.vermas{}
 
 
 
-.header{border-top:4px solid #576271; background:#fff; padding-bottom:12px }
+.header{border-top:4px solid #576271; background:#000000; padding-bottom:12px }
 
 	.header .wrapper{}
 
@@ -58,25 +58,25 @@ a.vermas{}
 
 		.menu{width:609px; float:right}
 
-			.menu a{color:#576271; display:block; float:left; font:400 13px/14px 'Open Sans', sans-serif; text-transform:uppercase; padding:36px 4px 2px; }
+			.menu a{color:#e2881a; display:block; float:left; font:400 13px/14px 'Open Sans', sans-serif; text-transform:uppercase; padding:36px 4px 2px; }
 
 			.menu a.contacto{border-top:none; margin-top: 27px; padding: 8px 10px 6px; border: 1px solid #b3b3b3; font-weight:600; border-radius: 3px; margin-left: 4px;}
 
-			.menu a:hover, .menu a.activo{ background:url(img/menu-activo.jpg) no-repeat top center; color:#e85062}
+			.menu a:hover, .menu a.activo{ background:url(img/menu-activo.jpg) no-repeat top center; color:#f9f9f9}
 
-			.menu a.contacto:hover, .menu a.contacto-activo{background:#e85062; border: 1px solid #bfc3c9; color:#fff }
+			.menu a.contacto:hover, .menu a.contacto-activo{background:#d99a06; border: 1px solid #bfc3c9; color:#fff }
 
 			.menu span{display:block; float:left; background:url(img/separador-menu.gif) no-repeat; width:2px; height:16px; margin:35px 10px 0}
 
 			
 
-.franja-header{background:#e52f44 url(img/bg-subheader.gif); margin-bottom:3px}
+.franja-header{background: #d99a06; url(img/bg-subheader.gif); margin-bottom:3px}
 
 	.franja-header .wrapper{background:url(img/sombra.png) top center no-repeat; padding:12px 20px}
 
-		.franja-header p{font:500 12px/14px 'Open Sans', sans-serif; text-align:right; padding-right:10px; color:#fff}
+		.franja-header p{font:500 12px/14px 'Open Sans', sans-serif; text-align:right; padding-right:10px; color: #000000}
 
-			.franja-header p a{font-weight:700; color:#fff}
+			.franja-header p a{font-weight:700; color:#000000}
 
 			
 
@@ -90,7 +90,7 @@ a.vermas{}
 
 				.caption h1 span{font-weight:800}
 
-			.caption a.conocemas{display:block; width:125px; background:#fff; text-align:center; margin:18px auto 0; border-radius:3px; padding:10px; color:#e52f44; font:600 14px/15px 'Open Sans', sans-serif;}
+			.caption a.conocemas{display:block; width:125px; background:#fff; text-align:center; margin:18px auto 0; border-radius:3px; padding:10px; color:#ffffff; font:600 14px/15px 'Open Sans', sans-serif;}
 
 			
 
@@ -106,9 +106,9 @@ a.vermas{}
 
 
 
-.empresa-index{padding:33px 0 178px; background:url(https://www.constructorasbh.cl/wp-content/uploads/2023/07/img-proyectos-1.jpg) repeat-x left bottom}
+.empresa-index{padding:33px 0 178px; background:url(https://www.constructoraarandu.com.ar/wp-content/uploads/2023/07/img-proyectos-1.jpg) repeat-x left bottom}
 
-	a.logo-gris{display:block; float:left; width:166px; height:175px; background:url(img/isotipo-sbh.jpg)}
+	a.logo-gris{display:block; float:left; width:166px; height:175px; background:url(imagen/logo-arandu.jpg)}
 
 	.empresa-index .wrapper div{width:788px; float:right}
 
@@ -120,11 +120,11 @@ a.vermas{}
 
 		
 
-.contacto-index{background:#e52f44 url(img/linea-contacto-index.jpg) repeat-x top; margin-top:1px}
+.contacto-index{background:#363636 url(img/linea-contacto-index.jpg) repeat-x top; margin-top:1px}
 
 	.contacto-index .wrapper{padding:38px 92px; width:786px }
 
-		.contacto-index h2{color:#fff; text-align:center; margin:0 auto 16px; width:280px; padding:0 20px; background:#e52f44;}
+		.contacto-index h2{color:#fff; text-align:center; margin:0 auto 16px; width:280px;}
 
 		.contacto-index .wrapper div{}
 
@@ -132,7 +132,7 @@ a.vermas{}
 
 			.contacto-index .fila p{width:250px; float:left; margin-right:18px}
 
-				.contacto-index input, .contacto-index textarea{display:block; width:226px; height:15px; padding:12px 10px 10px; background:#fff; border:2px solid #cb2538; border-radius:2px; font:italic 500 14px/16px 'Open Sans', sans-serif;}
+				.contacto-index input, .contacto-index textarea{display:block; width:226px; height:15px; padding:12px 10px 10px; background:#fff; border:2px solid #000000; border-radius:2px; font:italic 500 14px/16px 'Open Sans', sans-serif;}
 
 			.contacto-index p.mensaje{margin:15px 0}
 
@@ -140,7 +140,7 @@ a.vermas{}
 
 			.contacto-index p.submit{}	
 
-				.contacto-index input[type=submit]{width:200px; height:12px; padding:15px; border-color:#fff; background:#d72f42; font:700 16px/16px 'Open Sans', sans-serif; color:#fff; float:right; text-align:center; margin:0; cursor:pointer; height:auto;}
+				.contacto-index input[type=submit]{width:200px; height:12px; padding:15px; border-color:#000000; background:#d67d0f; font:700 16px/16px 'Open Sans', sans-serif; color:#fff; float:right; text-align:center; margin:0; cursor:pointer; height:auto;}
 
 		.contacto-index div.wpcf7-response-output{margin: 0;  padding: 9px 8px 7px; width: 400px; color: #fff; font: italic 500 14px/16px 'Open Sans', sans-serif;}
 
@@ -168,7 +168,7 @@ a.vermas{}
 
 		.proyectos-index .wrapper div a.img-post-index{display:block; border:2px solid #fff}
 
-		a.ver-mas{display:block; float:left; background:#e85062; color:#fff; padding:5px 8px; border-radius:3px; font:700 12px/14px 'Open Sans', sans-serif;}
+		a.ver-mas{display:block; float:left; background:#d99a06; color:#fff; padding:5px 8px; border-radius:3px; font:700 12px/14px 'Open Sans', sans-serif;}
 
 li.feed-item{display:block !important}
 .juicer-feed h1.referral, li.juicer-about, .j-image, .j-paginate{display:none !important}
@@ -181,15 +181,15 @@ li.feed-item{display:block !important}
 .linkedin2 .der iframe{width:100% !important; height:282px !important}
 
 
-.footer{background:#576271; }
+.footer{background:#d67d0f; }
 
 	.footer .inner{padding:23px 0 25px; }
 
-		.menu-footer{background:url(img/bg-menu-footer.png); height:37px;}
+		.menu-footer{height:37px;}
 
 			.menu-footer .wrapper{padding:11px 0 10px !important; width:465px}
 
-			.menu-footer a{color:#f1f1f1; display:block; float:left; text-transform:uppercase; font:300 12px/12px 'Open Sans', sans-serif; padding:2px 4px}
+			.menu-footer a{color:#000000; display:block; float:left; text-transform:uppercase; font:300 12px/12px 'Open Sans', sans-serif; padding:2px 4px}
 
 			.menu-footer a:hover{}
 
@@ -201,7 +201,7 @@ li.feed-item{display:block !important}
 
 		.datos-footer{width:500px; margin:0 auto; padding-top:16px}
 
-			a.logo-footer{display:block; width:214px; height:75px; background:url(img/logo-sbh-footer.png) no-repeat; float:left}
+			a.logo-footer{display:block; width:214px; height:75px; background:url(imagenes/logo-gris.png) no-repeat;background-size: contain;background-color: #d67d0f; float:left}
 
 			.datos-footer p{color:#f1f1f1; font:500 12px/16px 'Open Sans', sans-serif; float:right; width:270px; padding-top:15px}
 
@@ -229,7 +229,7 @@ li.feed-item{display:block !important}
 
 		.pagina .izq p{text-align:justify; margin-bottom:16px}
 
-		.datos-metros{background:#f1f1f1; text-align:center; padding:22px 35px 30px; width:250px; border-top:3px solid #e85062; }
+		.datos-metros{background:#f1f1f1; text-align:center; padding:22px 35px 30px; width:250px; border-top:3px solid #e8ae50; }
 
 	
 

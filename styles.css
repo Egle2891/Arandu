@@ -170,3 +170,32 @@ form.submitting .wpcf7-spinner {
 .wpcf7-reflection > output[hidden] {
 	display: none;
 }
+
+/* styles.css */undefined+
+undefined+
+/* ...otros estilos... */undefined+
+undefined+
+.wpcf7 .screen-reader-response {undefined+
+    position: absolute;undefined+
+    overflow: hidden;undefined+
+    clip: rect(1px, 1px, 1px, 1px);undefined+
+    clip-path: inset(50%);undefined+
+    height: 1px;undefined+
+    width: 1px;undefined+
+    margin: -1px;undefined+
+    padding: 0;undefined+
+    border: 0;undefined+
+    word-wrap: normal !important;undefined+
+}undefined+
+undefined+
+.wpcf7 form .wpcf7-response-output {undefined+
+    margin: 2em 0.5em 1em;undefined+
+    padding: 0.2em 1em;undefined+
+    border: 2px solid #00a0d2; /* Blue */undefined+
+}undefined+
+undefined+
+/* ...continuación del código... */undefined+
+undefined+
+.wpcf7-reflection > output[hidden] {undefined+
+    display: none;undefined+
+}
