@@ -1,8 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0039)https://www.constructoraArandu.com.ar/empresa/ -->
+<!-- saved from url=(0043)https://www.constructoraArandu.com.ar/servicios/#1 -->
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="icon" href="/modificado/imagenes/logo-sbh.ico" type="image/x-icon"> <!-- incono de la pestaña-->
+
     <meta
       http-equiv="origin-trial"
       content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"
@@ -12,78 +15,49 @@
       name="viewport"
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
     <meta name="HandheldFriendly" content="true" />
-
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
+    <link rel="shortcut icon" href="imgenes/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="imgenes/favicon.ico" type="image/x-icon" />
     <link href="css" rel="stylesheet" type="text/css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="coda-slider.css"
+    />
     <script type="text/javascript" async="" src="js"></script>
     <script
       type="text/javascript"
       async=""
       charset="utf-8"
-      src="recaptcha__es_419.js"
+      src=" recaptcha__es_419.js"
       crossorigin="anonymous"
       integrity="sha384-aPg6Wp94/H8dDeRKiEVGTUsYo6U4kWUhpSsPtrgK3yfh26EQgKT5dLCh2AiR7jCY"
     ></script>
     <script async="" src="local-ga.js"></script>
     <script src="jquery-1.8.2.min.js" type="text/javascript"></script>
-
-    <script
-      src="jquery.carouFredSel-6.2.0-packed.js"
-      type="text/javascript"
-    ></script>
-
-    <script type="text/javascript">
+    <script src="jquery.easing.1.3.js"></script>
+    <script src="jquery.coda-slider-3.0.js"></script>
+    <script>
       $(function () {
-        $("#carousel").carouFredSel({
-          responsive: true,
-
-          items: {
-            visible: 1,
-
-            width: 1198,
-
-            height: 220,
-          },
-
-          scroll: {
-            duration: 800,
-
-            timeoutDuration: 4700,
-
-            fx: "fade",
-          },
-
-          pagination: false,
+        $("#coda-slider-1").codaSlider({
+          autoHeight: true,
+          autoSlide: false,
+          dynamicArrows: false,
+          dynamicArrowsGraphical: false,
+          dynamicTabs: false,
         });
       });
-
+      var jash = location.href.substr(location.href.indexOf("#") + 1);
       $(document).ready(function () {
-        $('a[href^="#"]').on("click", function (e) {
-          e.preventDefault();
-          var target = this.hash;
-          var $target = $(target);
-          $("html, body")
-            .stop()
-            .animate(
-              {
-                scrollTop: $target.offset().top,
-              },
-              900,
-              "swing",
-              function () {
-                window.location.hash = target;
-              }
-            );
+        $(".nav-" + jash + "").addClass("activo");
+        $(".menu-servicios a").click(function () {
+          $(".menu-servicios a.activo").removeClass("activo");
+          $(this).addClass("activo");
+          var jash = location.href.substr(location.href.indexOf("#") + 1);
+          $(".nav-" + jash + "").addClass("activo");
         });
       });
     </script>
@@ -95,28 +69,30 @@
 
     <!-- This site is optimized with the Yoast SEO plugin v22.3 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>
-      Empresa - Constructora ARANDU - Especialistas en obras industriales y
+      Servicios - Constructora ARANDU - Especialistas en obras industriales y
       comerciales
     </title>
-    <link rel="canonical" href="Empresa - Constructora ARANDU.html" />
+    <link
+      rel="canonical"
+      href="https://www.constructoraArandu.com.ar/servicios/"
+    />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:type" content="article" />
     <meta
       property="og:title"
-      content="Empresa - Constructora ARANDU - Especialistas en obras industriales y comerciales"
+      content="Servicios - Constructora ARANDU - Especialistas en obras industriales y comerciales"
     />
     <meta
-      property="og:description"
-      content="Constructora ARANDU provee soluciones de excelencia en el estudio, diseño y desarrollo de proyectos industriales y comerciales, destacándose en el área de la construcción de infraestructuras productivas y de servicios. NUESTRA MISIÓN Otorgar un servicio constructivo integral, diseñando y ejecutando soluciones para satisfacer las necesidades que los proyectos de nuestros clientes requieren. NUESTRA VISIÓN Ser […]"
+      property="og:url"
+      content="https://www.constructoraArandu.com.ar/servicios/"
     />
-    <meta property="og:url" content="Empresa - Constructora ARANDU.html" />
     <meta
       property="og:site_name"
       content="Constructora ARANDU - Especialistas en obras industriales y comerciales"
     />
     <meta
       property="article:modified_time"
-      content="2018-10-31T18:39:03+00:00"
+      content="2018-10-31T18:41:00+00:00"
     />
     <meta property="og:image" content="imagenes/logo-arandu.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -126,28 +102,28 @@
         "@graph": [
           {
             "@type": "WebPage",
-            "@id": "https://www.constructoraArandu.com.ar/empresa/",
-            "url": "https://www.constructoraArandu.com.ar/empresa/",
-            "name": "Empresa - Constructora ARANDU - Especialistas en obras industriales y comerciales",
+            "@id": "https://www.constructoraArandu.com.ar/servicios/",
+            "url": "https://www.constructoraArandu.com.ar/servicios/",
+            "name": "Servicios - Constructora ARANDU - Especialistas en obras industriales y comerciales",
             "isPartOf": {
               "@id": "https://www.constructoraArandu.com.ar/#website"
             },
-            "datePublished": "2015-11-19T03:48:46+00:00",
-            "dateModified": "2018-10-31T18:39:03+00:00",
+            "datePublished": "2015-11-19T03:49:23+00:00",
+            "dateModified": "2018-10-31T18:41:00+00:00",
             "breadcrumb": {
-              "@id": "https://www.constructoraArandu.com.ar/empresa/#breadcrumb"
+              "@id": "https://www.constructoraArandu.com.ar/servicios/#breadcrumb"
             },
             "inLanguage": "es",
             "potentialAction": [
               {
                 "@type": "ReadAction",
-                "target": ["https://www.constructoraArandu.com.ar/empresa/"]
+                "target": ["https://www.constructoraArandu.com.ar/servicios/"]
               }
             ]
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://www.constructoraArandu.com.ar/empresa/#breadcrumb",
+            "@id": "https://www.constructoraArandu.com.ar/servicios/#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -155,14 +131,14 @@
                 "name": "Portada",
                 "item": "https://www.constructoraArandu.com.ar/"
               },
-              { "@type": "ListItem", "position": 2, "name": "Empresa" }
+              { "@type": "ListItem", "position": 2, "name": "Servicios" }
             ]
           },
           {
             "@type": "WebSite",
             "@id": "https://www.constructoraArandu.com.ar/#website",
             "url": "https://www.constructoraArandu.com.ar/",
-            "name": "Constructora ARANDU - Especialistas en obras industriales y comerciales",
+            "name": "Constructora SBH - Especialistas en obras industriales y comerciales",
             "description": "Especialistas en obras industriales y comerciales",
             "potentialAction": [
               {
@@ -190,7 +166,7 @@
         svgExt: ".svg",
         source: {
           concatemoji:
-            "https:\/\/www.constructoraArandu.com.ar/\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5",
+            "https:\/\/www.constructoraArandu.com.ar\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5",
         },
       };
       /*! This file is auto-generated */
@@ -723,29 +699,32 @@
       type="text/css"
       media="all"
     />
-    <link rel="https://api.w.org/" href="wp-json/" />
+    <link
+      rel="https://api.w.org/"
+      href="https://www.constructoraArandu.com.ar/wp-json/"
+    />
     <link
       rel="alternate"
       type="application/json"
-      href="wp-json/wp/v2/pages/5"
+      href="https://www.constructoraArandu.com.ar/wp-json/wp/v2/pages/7"
     />
     <link
       rel="EditURI"
       type="application/rsd+xml"
       title="RSD"
-      href="xmlrpc.php?rsd"
+      href="https://www.constructoraArandu.com.ar/xmlrpc.php?rsd"
     />
     <meta name="generator" content="WordPress 6.5.5" />
-    <link rel="shortlink" href="https://www.constructoraArandu.com.ar/?p=5" />
+    <link rel="shortlink" href="https://www.constructoraArandu.com.ar/?p=7" />
     <link
       rel="alternate"
       type="application/json+oembed"
-      href="https://www.constructoraArandu.com.ar/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.constructoraArandu.com.ar%2Fempresa%2F"
+      href="https://www.constructoraArandu.com.ar/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.constructoraarandu.com.ar%2Fservicios%2F"
     />
     <link
       rel="alternate"
       type="text/xml+oembed"
-      href="https://www.constructoraArandu.com.ar/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.constructoraArandu.com.ar%2Fempresa%2F&amp;format=xml"
+      href="https://www.constructoraArandu.com.ar/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.constructoraarandu.com.ar%2Fservicios%2F&amp;format=xml"
     />
     <style type="text/css">
       .recentcomments a {
@@ -760,29 +739,33 @@
       }
     </style>
   </head>
-
-  <body data-rsssl="1" class="pagina empresa">
+  <body data-rsssl="1" class="pagina servicios">
     <div class="header">
       <div class="wrapper cf">
-        <a href="https://www.constructoraArandu.com.ar/" class="logo"
-
+        <a href="imagenes/logo-arandu.png" class="logo"
           ><img
-            src="./imagenes/logo-arandu.png"
+            src="imagenes/logo-arandu.png"
             width="245"
             height="85"
             alt="Constructora ARANDU"
         /></a>
         <div class="menu cf">
-          <a href="Inicio - Constructora ARANDU.html">Inicio</a><span></span
-          ><a href="Empresa - Constructora ARANDU.html" class="activo"
-            >Empresa</a
+          <a href="/modificado/Inicio - Constructora ARANDU.html" target="_self">Inicio</a
           ><span></span
-          ><a href="Servicios - Constructora ARANDU.html">Servicios</a
+          ><a href="/modificado/Empresa - Constructora ARANDU.html" target="_self">Empresa</a
           ><span></span
-          ><a href="Proyectos - Constructora ARANDU.html">Proyectos</a
-          ><span></span>
-          <a href="Contacto - Constructora ARANDU.html" class="contacto"
-            >Contacto</a
+          ><a
+            href="/modificado/Servicios - Constructora ARANDU.html"
+            target="_self" class="activo"
+            >Servicios</a
+          ><span></span
+          ><a href="/modificado/Proyectos - Constructora ARANDU.html"
+          target="_self">Proyectos</a
+          ><span></span
+          ><a
+            href="/modificado/Contacto - Constructora ARANDU.html"
+            class="contacto"
+            target="_self">Contacto</a
           >
         </div>
       </div>
@@ -791,332 +774,367 @@
     <div class="franja-header">
       <div class="wrapper cf">
         <p>
-          Teléfonos: <a href="tel:9 3625 319100 ">(+54) 9 3625 319100 </a
-          ><a href="tel:9 3625 163892 ">(+54) 9 3625 163892 </a> &nbsp;&nbsp; |
-          &nbsp;&nbsp;
-          <a href="https://constructoraArandu.com.ar/lp/trabaja-con-nosotros/"
+          Teléfono: <a href="tel:2 2656 5108">(+56) 2 2656 5108</a> &nbsp;&nbsp;
+          | &nbsp;&nbsp;
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScXKrljggzvT5lpTdvbR7Uj0PGu6NfKP-VkG2oZBo_sz9hREA/viewformv"
             >Trabaja con Nosotros</a
-          >
+          > <!--  Cambies esto por un formulario, "Actualizar con el enlace del cliente" .... https://constructoraArandu.com.ar/lp/trabaja-con-nosotros/-->
         </p>
       </div>
     </div>
-
-    <div class="banner" id="wrapper">
-      <div
-        class="caroufredsel_wrapper"
-        style="
-          text-align: start;
-          float: none;
-          position: relative;
-          inset: auto;
-          z-index: auto;
-          width: 400px;
-          height: 220px;
-          margin: 0px;
-          overflow: hidden;
-        "
-      >
-        <div
-          id="carousel"
-          style="
-            text-align: left;
-            float: none;
-            position: absolute;
-            inset: 0px auto auto 0px;
-            margin: 0px;
-            width: 1600px;
-            height: 220px;
-          "
-        >
-          <div style="width: 200px">
-            <img src="imagenes/banner1.jpg" alt="" />
-          </div>
-
-          <div style="width: 200px">
-            <img src="imagenes/banner4.jpg" alt="" />
-          </div>
-
-          <div style="width: 200px">
-            <img src="imagenes/banner5.jpg" alt="" />
+    <div class="info cf">
+      <div class="titulo-pagina">
+        <h1>
+          <span>Servicios</span> - Grandes obras industriales y comerciales.
+        </h1>
+      </div>
+      <div class="wrapper cf">
+        <div class="izq menu-servicios">
+          <a
+            href="Servicios - Constructora Arandu.html"
+            class="nav-1 activo"
+            data-ref="coda-slider-1"
+            >Construcción</a
+          >
+          <a
+            href="Servicios - Constructora Arandu.html"
+            class="nav-2"
+            data-ref="coda-slider-1"
+            >Arquitectura</a
+          >
+          <a
+            href="Servicios - Constructora Arandu.html"
+            class="nav-3"
+            data-ref="coda-slider-1"
+            >Ingeniería estructural</a
+          >
+          <a
+            href="Servicios - Constructora Arandu.html"
+            class="nav-4"
+            data-ref="coda-slider-1"
+            >Estructuras metálicas</a
+          >
+          <a
+            href="Servicios - Constructora Arandu.html"
+            class="nav-5"
+            data-ref="coda-slider-1"
+            >Montajes industriales</a
+          >
+          <a
+            href="Servicios - Constructora Arandu.html"
+            class="nav-6"
+            data-ref="coda-slider-1"
+            >Asesoría de proyectos</a
+          >
+        </div>
+        <div class="der">
+          <div
+            id="coda-slider-1-wrapper"
+            class="coda-slider-wrapper"
+            style="width: 310px"
+          >
+            <div class="coda-slider" id="coda-slider-1" style="height: 353px">
+              <div
+                class="panel-container"
+                style="margin-left: -310px; width: 2480px"
+              >
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Asesoría de proyectos</h2>
+                    <p>
+                      Asesoramos los proyectos de nuestros clientes de acuerdo a
+                      sus expectativas de inversión.<br />
+                      Evaluamos sus proyectos y proponemos mejoras para
+                      adecuarnos a sus necesidades.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Construcción</h2>
+                    <p>
+                      Somos especialistas en la construcción de obras
+                      industriales, comerciales y civiles. Ejecutamos proyectos
+                      a suma alzada o por administración.
+                    </p>
+                    <p>Nuestros principales servicios constructivos son:</p>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/planta-de-produccion/"
+                          >Construcción de Plantas de producción</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/local-comercial/"
+                          >Construcción de Edificaciones Comerciales</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/edificio-corporativo/"
+                          >Construcción de Oficinas Corporativas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/centro-de-distribucion/"
+                          >Construcción de Centros de distribución</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/bodegas/"
+                          >Construcción de Bodegas y Galpones</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Arquitectura</h2>
+                    <p>
+                      Realizamos el diseño de una edificación, su distribución
+                      de usos y espacios. Además, buscamos la mejor manera de
+                      utilizar los materiales y tecnologías disponibles en la
+                      actualidad para la elaboración del conjunto de planos, con
+                      detalles y perspectivas.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Ingeniería estructural</h2>
+                    <p>
+                      Disponemos de un destacado equipo de profesionales, capaz
+                      de realizar estudios y proyectos de ingeniería
+                      estructural.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Estructuras metálicas</h2>
+                    <p>
+                      Contamos con personal calificado para la fabricación de
+                      todo tipo de estructuras metálicas, además de contar con
+                      un exhaustivo control de calidad para satisfacer cada uno
+                      de los requerimientos de nuestros clientes. Estamos
+                      totalmente capacitados para elaborar cualquier tipo de
+                      estructura de acuerdo a la planimetría entregada.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Montajes industriales</h2>
+                    <p>
+                      Nuestros colaboradores cuentan con experiencia en el área
+                      del diseño, proceso y montaje industrial. Importantes
+                      empresas productivas y de servicio&nbsp;del territorio
+                      nacional avalan nuestro desempeño, lo que nos permite
+                      entregar un trabajo que genere confianza en nuestros
+                      clientes.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Asesoría de proyectos</h2>
+                    <p>
+                      Asesoramos los proyectos de nuestros clientes de acuerdo a
+                      sus expectativas de inversión.<br />
+                      Evaluamos sus proyectos y proponemos mejoras para
+                      adecuarnos a sus necesidades.
+                    </p>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="panel-wrapper">
+                    <h2>Construcción</h2>
+                    <p>
+                      Somos especialistas en la construcción de obras
+                      industriales, comerciales y civiles. Ejecutamos proyectos
+                      a suma alzada o por administración.
+                    </p>
+                    <p>Nuestros principales servicios constructivos son:</p>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/planta-de-produccion/"
+                          >Construcción de Plantas de producción</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/local-comercial/"
+                          >Construcción de Edificaciones Comerciales</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/edificio-corporativo/"
+                          >Construcción de Oficinas Corporativas</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/centro-de-distribucion/"
+                          >Construcción de Centros de distribución</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.constructoraArandu.com.ar/categoria-proyecto/bodegas/"
+                          >Construcción de Bodegas y Galpones</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="info cf">
-      <div class="titulo-pagina" style="padding-bottom: 30px">
-        <h1>
-          <span>Constructora ARANDU</span><br />
-          Especialistas en la construcción de obras industriales, comerciales y
-          civiles.
-        </h1>
-      </div>
+    <div class="contacto-index" style="margin-top: 40px">
+      <div class="wrapper cf" style="padding-bottom: 110px !important">
+        <h2 class="titulo">
+          <span style="font-size: 13px">¿Buscas desarrollar un proyecto?</span
+          ><br />
+          Envíanos tus consultas
+        </h2>
 
-      <div class="wrapper cf">
-        <div class="izq">
-          <p
-            style="text-align: justify; font: 700 16px/25px 'Open Sans' sans-serif; margin-bottom:32px; background: #e85300;"
-    color: #fff;
-    padding: 25px;
-    text-transform: uppercase;"></p>
-            
-            Constructora ARANDU provee soluciones de excelencia en el estudio,
-            diseño y desarrollo de proyectos industriales y comerciales,
-            destacándose en el área de la construcción de infraestructuras
-            productivas y de servicios.
-          </p>
-          <ul style="margin-left: 14px">
-            <li style="text-align: justify"><strong>NUESTRA MISIÓN</strong></li>
-          </ul>
-          <p style="text-align: justify">
-            Otorgar un servicio constructivo integral, diseñando y ejecutando
-            soluciones para satisfacer las necesidades que los proyectos de
-            nuestros clientes requieren.
-          </p>
-          <ul style="margin-left: 14px; margin-top: 30px">
-            <li style="text-align: justify"><strong>NUESTRA VISIÓN</strong></li>
-          </ul>
-          <p>
-            Ser reconocida en el área industrial y comercial de nuestro país por
-            el servicio entregado en el desarrollo y la construcción de los
-            proyectos de nuestros clientes.
-          </p>
-          <p style="text-align: justify"></p>
-        </div>
-
-        <div class="der">
-          <div class="datos-metros">
-            <img
-              src="./imagenes/esquema-empresa.jpg"
-              width="250"
-              height="126"
-              alt="Experiencia, creatividad y capacidad de respuesta"
-            />
-
-            <p style="margin-top: 31px; margin-bottom: 12px; text-align: left">
-              Nuestros principales servicios de construcción son:
-            </p>
-            <ul style="text-align: left; margin-left: 14px">
-              <li>
-                <a href="Proyectos - Constructora ARANDU.html"
-                  >Construcción de Plantas de Producción</a
-                >
-              </li>
-              <li>
-                <a href="Proyectos - Constructora ARANDU.html"
-                  >Construcción de Edificaciones comerciales</a
-                >
-              </li>
-              <li>
-                <a href="Proyectos - Constructora ARANDU.html"
-                  >Construcción de Oficinas corporativas</a
-                >
-              </li>
-              <li>
-                <a href="Proyectos - Constructora ARANDU.html"
-                  >Construcción de Centros de distribución</a
-                >
-              </li>
-              <li>
-                <a href="Proyectos - Constructora ARANDU.html"
-                  >Construcción de Bodegas o Galpones</a
-                >
-              </li>
-            </ul>
+        <div class="wpcf7 js" id="wpcf7-f13-p7-o1" lang="es-ES" dir="ltr">
+          <div class="screen-reader-response">
+            <p role="status" aria-live="polite" aria-atomic="true"></p>
+            <ul></ul>
           </div>
-        </div>
-      </div>
-      <div class="proyectos-index">
-        <h2 class="titulo"><span>Proyectos destacados</span></h2>
-
-        <div class="wrapper cf">
-          <div>
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/customer-center-airbus-helicopters-chile/"
-              title="Ver proyecto HANGARES Y OFICINAS – AIRBUS CHILE"
-              class="img-post-index"
-              ><img
-                width="160"
-                height="115"
-                src="DSC_4189-160x115.jpg"
-                class="attachment-post-thumbnail size-post-thumbnail"
-                alt="HANGARES Y OFICINAS – AIRBUS CHILE"
-                decoding="async"
-                loading="lazy"
-                srcset="
-                  https://www.constructoraArandu.com.ar/wp-content/uploads/2017/08/DSC_4189-160x115.jpg 160w,
-                  https://www.constructoraArandu.com.ar/wp-content/uploads/2017/08/DSC_4189-632x450.jpg 632w
-                "
-                sizes="(max-width: 160px) 100vw, 160px"
-            /></a>
-            <h3>
-              <a
-                href="https://www.constructoraArandu.com.ar/proyectos/customer-center-airbus-helicopters-chile/"
-                >HANGARES Y OFICINAS – AIRBUS CHILE</a
-              >
-            </h3>
-
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/customer-center-airbus-helicopters-chile/"
-              class="ver-mas"
-              >Ver más →</a
-            >
-          </div>
-
-          <div>
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/planta-industrial-duas-rodas-chile-2/"
-              title="Ver proyecto PLANTA DE ALIMENTOS – DUAS RODAS CHILE"
-              class="img-post-index"
-              ><img
-                width="160"
-                height="115"
-                src="./imagenes/DSC_1826-160x115.jpg"
-                class="attachment-post-thumbnail size-post-thumbnail"
-                alt="PLANTA DE ALIMENTOS – DUAS RODAS CHILE"
-                decoding="async"
-                loading="lazy"
-                srcset="
-                  imagenes/DSC_1826-160x115.jpg 160w,
-                  imagenes/DSC_1826-632x450.jpg 632w
-                "
-                sizes="(max-width: 160px) 100vw, 160px"
-            /></a>
-            <h3>
-              <a
-                href="https://www.constructoraArandu.com.ar/proyectos/planta-industrial-duas-rodas-chile-2/"
-                >PLANTA DE ALIMENTOS – DUAS RODAS CHILE</a
-              >
-            </h3>
-
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/planta-industrial-duas-rodas-chile-2/"
-              class="ver-mas"
-              >Ver más →</a
-            >
-          </div>
-
-          <div>
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/terminal-aereo-privado-aviasur-sat/"
-              title="Ver proyecto TERMINAL AÉREO PRIVADO – AVIASUR"
-              class="img-post-index"
-              ><img
-                width="160"
-                height="115"
-                src="./imagenes/DSC_0273-1-160x115.png"
-                class="attachment-post-thumbnail size-post-thumbnail"
-                alt="TERMINAL AÉREO PRIVADO – AVIASUR"
-                decoding="async"
-                loading="lazy"
-                srcset="
-                  https://www.constructoraArandu.com.ar/wp-content/uploads/2018/06/DSC_0273-1-160x115.png 160w,
-                  https://www.constructoraArandu.com.ar/wp-content/uploads/2018/06/DSC_0273-1-632x450.png 632w
-                "
-                sizes="(max-width: 160px) 100vw, 160px"
-            /></a>
-            <h3>
-              <a
-                href="https://www.constructoraArandu.com.ar/proyectos/terminal-aereo-privado-aviasur-sat/"
-                >TERMINAL AÉREO PRIVADO – AVIASUR</a
-              >
-            </h3>
-
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/terminal-aereo-privado-aviasur-sat/"
-              class="ver-mas"
-              >Ver más →</a
-            >
-          </div>
-
-          <div>
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/centro-de-distribucion-newtrans/"
-              title="Ver proyecto CENTRO DE DISTRIBUCIÓN – NEWTRANS"
-              class="img-post-index"
-              ><img
-                width="160"
-                height="115"
-                src="imagenes/KGXX9048-160x115.jpeg"
-                class="attachment-post-thumbnail size-post-thumbnail"
-                alt="CENTRO DE DISTRIBUCIÓN – NEWTRANS"
-                decoding="async"
-                loading="lazy"
-                srcset="
-                  imagenes/KGXX9048-160x115.jpeg 160w,
-                  imagenes/KGXX9048-632x450.jpeg 632w
-                "
-                sizes="(max-width: 160px) 100vw, 160px"
-            /></a>
-            <h3>
-              <a
-                href="https://www.constructoraArandu.com.ar/proyectos/centro-de-distribucion-newtrans/"
-                >CENTRO DE DISTRIBUCIÓN – NEWTRANS</a
-              >
-            </h3>
-
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/centro-de-distribucion-newtrans/"
-              class="ver-mas"
-              >Ver más →</a
-            >
-          </div>
-
-          <div>
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/edificio-plaza-norte-2-minibodegas-aki-kb/"
-              title="Ver proyecto BODEGAS FLEX PLAZA NORTE 2 – AKI KB"
-              class="img-post-index"
-              ><img
-                width="160"
-                height="115"
-                src="imagenes/MG_8677-160x115.jpg"
-                class="attachment-post-thumbnail size-post-thumbnail"
-                alt="BODEGAS FLEX PLAZA NORTE 2 – AKI KB"
-                decoding="async"
-                loading="lazy"
-                srcset="
-                  imagenes/MG_8677-160x115.jpg 160w,
-                  imagenes/MG_8677-632x450.jpg 632w
-                "
-                sizes="(max-width: 160px) 100vw, 160px"
-            /></a>
-            <h3>
-              <a
-                href="https://www.constructoraArandu.com.ar/proyectos/edificio-plaza-norte-2-minibodegas-aki-kb/"
-                >BODEGAS FLEX PLAZA NORTE 2 – AKI KB</a
-              >
-            </h3>
-
-            <a
-              href="https://www.constructoraArandu.com.ar/proyectos/edificio-plaza-norte-2-minibodegas-aki-kb/"
-              class="ver-mas"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="footer">
-        <div class="inner">
-          <div class="menu-footer cf">
-            <div class="wrapper">
-              <a href="Inicio - Constructora ARANDU.html">Inicio</a><span></span
-              ><a href="Empresa - Constructora ARANDU.html" class="activo"
-                >Empresa</a
-              ><span></span
-              ><a href="Servicios - Constructora ARANDU.html">Servicios</a
-              ><span></span
-              ><a href="Proyectos - Constructora ARANDU.html">Proyectos</a
-              ><span></span
-              ><a href="Contacto - Constructora ARANDU.html" class="contacto"
-                >Contacto</a
-              >
+          <form
+            action="https://www.constructoraArandu.com.ar/servicios/#wpcf7-f13-p7-o1"
+            method="post"
+            class="wpcf7-form init"
+            aria-label="Formulario de contacto"
+            novalidate="novalidate"
+            data-status="init"
+          >
+            <div style="display: none">
+              <input type="hidden" name="_wpcf7" value="13" />
+              <input type="hidden" name="_wpcf7_version" value="5.9.3" />
+              <input type="hidden" name="_wpcf7_locale" value="es_ES" />
+              <input
+                type="hidden"
+                name="_wpcf7_unit_tag"
+                value="wpcf7-f13-p7-o1"
+              />
+              <input type="hidden" name="_wpcf7_container_post" value="7" />
+              <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+              <input
+                type="hidden"
+                name="_wpcf7_recaptcha_response"
+                value="03AFcWeA4W_aqMAtIOy19eZK-PK_9mNFZj2FjLEJVD9OEm1CuCUStKHEELeDJyO9XbQmeJKx84NeUw_L-2CFT8pZ4sqNyxQiuR8rZGbyESMN5lzy0n1j3FaNe-738oMXmdLxfVYj_A2E0eGRXQK8cMUgVbtAFDFxNy7OZEhHaNBoBIKH0_A8Ho8CHz4XwiJWVBgSjyTf28cI1T0DGoBSjFGMobBbLdxhlKyP_yjlmDLPXTNCI8yeNuF9FFp5iF-1DOD1vnTqDHM_1i6DLKNAI3b5O8SXeNT2Wm7q_yfTYPaiIK2BbsXwP1fSobx8kK1NI24FNZeFmwmW75glLe8nWyns8hQCpFjrDR2PNyN4LMJN9KHF_6YE6FLoOjLZ_kPzIxjMp538mH2eWPzo8tS7hNopSLbg6rQ92dgoqLtOBzOjTcMuVsFKttTek_N440daR-qC5Mck_VPzTT8bgN7GNpD1uMp4yg3geOy_y5ZLHRbqF-zHgKZn2sM-UyOo686YBYA-PE13A9B6OQfmxp2WSX7dQBbrdfYOaonBjn7pU2rlQWjt0j7zII8Eavx1PU2YIHYKKL_Z8cKMm7iRZW2FN65XSZ3g6poNRlf9FSd0jzMxzJrjVPEwPDhsM1QaM0qXIUioJCr22c1lxpAZJyyQJg4t86aH6XdOvZftLgypyVJvw6xXUVARmLTs1TyjefJeBC9HUvDVy1leZdX07zRcglzb4NYp5qEOP8sbX6yqCIVlB2TqXYYa91Omng5ZD5PU0Vwxl0SCgIpmNr8fg9Pj7mc24oC9jqY9SuxPuZV9noUovHBY4eSoiAeyClFJ_Sj7sEKa6J30LgmHO-6uniF5kFwjcQjQ5O-GtXPcdjDburyLvuTxbv6-O9Duo"
+              />
             </div>
+            <div class="fila cf">
+              <p>
+                Nombre y Apellidos<br />
+                <span class="wpcf7-form-control-wrap" data-name="your-name"
+                  ><input
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                    aria-required="true"
+                    aria-invalid="false"
+                    value=""
+                    type="text"
+                    name="your-name"
+                /></span>
+              </p>
+              <p>
+                Teléfono<br />
+                <span class="wpcf7-form-control-wrap" data-name="telefono"
+                  ><input
+                    size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                    aria-required="true"
+                    aria-invalid="false"
+                    value=""
+                    type="text"
+                    name="telefono"
+                /></span>
+              </p>
+              <p class="last">
+                Email<br />
+                <span class="wpcf7-form-control-wrap" data-name="your-email"
+                  ><input
+                    size="40"
+                    class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                    aria-required="true"
+                    aria-invalid="false"
+                    value=""
+                    type="email"
+                    name="your-email"
+                /></span>
+              </p>
+            </div>
+            <p class="mensaje">
+              Mensaje<br />
+              <span class="wpcf7-form-control-wrap" data-name="your-message">
+                <textarea
+                  cols="40"
+                  rows="10"
+                  class="wpcf7-form-control wpcf7-textarea"
+                  aria-invalid="false"
+                  name="your-message"
+                ></textarea>
+              </span>
+            </p>
+            <p class="submit">
+              <input
+                class="wpcf7-form-control wpcf7-submit has-spinner"
+                type="submit"
+                value="Enviar consulta"
+              /><span class="wpcf7-spinner"></span>
+            </p>
+
+            <p>
+              ¿Buscas trabajo u ofreces un producto/servicio?
+              <a
+                href="https://constructoraArandu.com.ar/lp/trabaja-con-nosotros/"
+                style="color: #fff; text-decoration: underline"
+                >Envíanos tus datos aquí →</a
+              >
+            </p>
+            <div class="wpcf7-response-output" aria-hidden="true"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="inner">
+        <div class="menu-footer cf">
+          <div class="wrapper">
+            <a href="/modificado/Inicio - Constructora ARANDU.html" target="_self">Inicio</a>
+            
+            <a href="/modificado/Empresa - Constructora ARANDU.html" target="_self">Empresa</a>
+            
+            <a href="/modificado/Servicios - Constructora ARANDU.html" class="activo" target="_self">Servicios</a>
+            
+            <a href="/modificado/Proyectos - Constructora ARANDU.html" target="_self">Proyectos</a>
+            
+            <a href="/modificado/Contacto - Constructora ARANDU.html" class="contacto" target="_self">Contacto </a>
           </div>
         </div>
         <div class="datos-footer cf">
-          <a href="imagenes/logo-arandu.png" class="logo-footer"></a>
+
+          <a href="/modificado/Inicio - Constructora ARANDU.html" class="logo-footer" targert="_self"><a href="">
+
+          </a>
+          
           <p>
             Remedios de Escalada Nº 350, Resistencia<br />
             Chaco - Argentina<br />
@@ -1125,185 +1143,8 @@
           </p>
         </div>
 
-        <a href="http://www.estudioa.cl/" class="estudioa" target="_blank"
-          ><img
-            src="imagenes/logo-gris.png"
-            width="200"
-            height="76"
-            alt="Desarrollado por Estudio A"
-        /></a>
+ 
       </div>
     </div>
 
-    <!-- Google Analytics Local by Webcraftic Local Google Analytics -->
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(window, document, "script", "local-ga.js", "ga");
-      ga("create", "UA-92440336-1", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("send", "pageview");
-    </script>
-    <!-- end Google Analytics Local by Webcraftic Local Google Analytics -->
-    <script type="text/javascript" src="index.js" id="swv-js"></script>
-    <script type="text/javascript" id="contact-form-7-js-extra">
-      /* <![CDATA[ */
-      var wpcf7 = {
-        api: {
-          root: "https:\/\/www.constructoraarandu.com.ar\/wp-json\/",
-          namespace: "contact-form-7\/v1",
-        },
-      };
-      /* ]]> */
-    </script>
-    <script
-      type="text/javascript"
-      src="index(1).js"
-      id="contact-form-7-js"
-    ></script>
-    <script type="text/javascript" id="wpcf7-ga-events-js-before">
-      /* <![CDATA[ */
-      var cf7GASendActions = {
-          invalid: "true",
-          spam: "true",
-          mail_sent: "true",
-          mail_failed: "true",
-          sent: "false",
-        },
-        cf7FormIDs = { ID_13: "Formulario de contacto 1" };
-      /* ]]> */
-    </script>
-    <script
-      type="text/javascript"
-      src="cf7-google-analytics.min.js"
-      id="wpcf7-ga-events-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="api.js"
-      id="google-recaptcha-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="wp-polyfill-inert.min.js"
-      id="wp-polyfill-inert-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="regenerator-runtime.min.js"
-      id="regenerator-runtime-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="wp-polyfill.min.js"
-      id="wp-polyfill-js"
-    ></script>
-    <script type="text/javascript" id="wpcf7-recaptcha-js-extra">
-      /* <![CDATA[ */
-      var wpcf7_recaptcha = {
-        sitekey: "6Le3HekcAAAAAKtZ35TYk5pP5RchjUcvhCR2bB-2",
-        actions: { homepage: "homepage", contactform: "contactform" },
-      };
-      /* ]]> */
-    </script>
-    <script
-      type="text/javascript"
-      src="index(2).js"
-      id="wpcf7-recaptcha-js"
-    ></script>
-
-    <div>
-      <div
-        class="grecaptcha-badge"
-        data-style="bottomright"
-        style="
-          width: 256px;
-          height: 60px;
-          display: block;
-          transition: right 0.3s;
-          position: fixed;
-          bottom: 14px;
-          right: -186px;
-          box-shadow: gray 0px 0px 5px;
-          border-radius: 2px;
-          overflow: hidden;
-        "
-      >
-        <div class="grecaptcha-logo">
-          <iframe
-            title="reCAPTCHA"
-            width="256"
-            height="60"
-            role="presentation"
-            name="a-woblm3jf15zf"
-            frameborder="0"
-            scrolling="no"
-            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-            src="anchor.html"
-          ></iframe>
-        </div>
-        <div class="grecaptcha-error"></div>
-        <textarea
-          id="g-recaptcha-response-100000"
-          name="g-recaptcha-response"
-          class="g-recaptcha-response"
-          style="
-            width: 250px;
-            height: 40px;
-            border: 1px solid rgb(193, 193, 193);
-            margin: 10px 25px;
-            padding: 0px;
-            resize: none;
-            display: none;
-          "
-        ></textarea>
-      </div>
-      <iframe style="display: none" src="saved_resource(1).html"></iframe>
-    </div>
-    <iframe
-      allow="join-ad-interest-group"
-      data-tagging-id="G-CVVGMH39TF"
-      data-load-time="1725226606109"
-      height="0"
-      width="0"
-      src="rul.html"
-      style="display: none; visibility: hidden"
-    ></iframe
-    ><iframe
-      scrolling="no"
-      frameborder="0"
-      allowtransparency="true"
-      src="2f70fb173b9000da126c79afe2098f02.html"
-      title="Twitter settings iframe"
-      style="display: none"
-    ></iframe
-    ><iframe
-      id="rufous-sandbox"
-      scrolling="no"
-      frameborder="0"
-      allowtransparency="true"
-      allowfullscreen="true"
-      style="
-        position: absolute;
-        visibility: hidden;
-        display: none;
-        width: 0px;
-        height: 0px;
-        padding: 0px;
-        border: none;
-      "
-      title="Twitter analytics iframe"
-      src="saved_resource(2).html"
-    ></iframe>
-  </body>
-</html>
+     <!--borre unos bloques comentados-->

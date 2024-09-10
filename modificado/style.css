@@ -263,7 +263,7 @@ li.feed-item{display:block !important}
 
 /*servicios*/	
 
-.servicios .izq{width:270px; background:#f1f1f1; border-top:3px solid #e85062; padding-top:1px  }
+.servicios .izq{width:270px; background: #D3D3D3; border-top:3px solid #e85062; padding-top:1px  }
 
 	.servicios .izq a{border-bottom: 2px solid #fff; padding: 11px 14px; font: 600 13px/15px 'Open Sans', sans-serif; display: block; color: #363636; text-transform:uppercase }
 
