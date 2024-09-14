@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    height: 100%;
+    width: auto;
+}
+
+ .headerP{
+    width: 100%;
+ }
+
+.container {
+    position: relative; /* o position: absolute si es necesario */
+    width: 100%;
+
+}
+.trabajo { 
+    color: #000000;
+    position: top;
+    text-decoration: none;     
+    margin: 5px;     
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content: end ;                                                     
+}
+
+.trabajo::after {
+    content: ''; /* Requerido para que el pseudo-elemento aparezca */    
+    width: 100vw; /* Ocupa todo el ancho de la vista (viewport) */
+    height: 1px; /* Grosor de la línea */
+    background-color: #000000; /* Color de la línea */
+    position: absolute;
+    bottom: 0; /* Posiciona la línea en la parte inferior del contenedor del texto */
+     /* Alinea la línea al borde izquierdo del contenedor */
+ } 

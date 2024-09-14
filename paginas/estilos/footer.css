@@ -1,0 +1,44 @@
+/* Asegúrate de que el CSS se aplique correctamente a tu archivo */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* O cualquier fuente que prefieras */
+}
+
+footer {
+    position: fixed; /* Fija el footer en la parte inferior de la ventana */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* Fondo del footer */
+    color: rgb(255, 255, 255); /* Color del texto */
+    text-align: center; /* Centra el texto dentro del footer */
+    padding: 20px; /* Espacio interno del footer */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+}
+
+nav {
+    display: flex; /* Usa flexbox para alinear los enlaces */
+    gap: 10px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: rgb(255, 255, 255); /* Color de los enlaces */
+    font-weight: 600; /* Peso de la fuente */
+}
+
+nav a:hover {
+    color: rgb(200, 200, 200); /* Color de los enlaces al pasar el ratón */
+}
+
+p {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo opcional para mejorar la visibilidad */
+    color: #fff; /* Color del texto */
+}

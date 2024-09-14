@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    height: 100%;
+    width: auto;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+
+}
+
+header iframe.menu {
+    width: 100%;
+    height: 100px;
+    border: none;      
+}
+
+.container {
+    background-color: #d99a06;
+    width: 100%;
+    position: relative;    
+}
+
+.trabajo {
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+    display: grid;
+    color: rgb(0, 0, 0);
+    grid-template-columns: auto;
+    justify-content: end;    
+}           
+main {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 450px;    
+}    
+iframe {
+    height: auto;
+}
+
+main iframe {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 450px;
+
+}        
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+
+}
+
+
+/* Marcos las Media Queries abajo, realmente no tengo idea si funciona bien o no.. El lugar donde las tengo que colocar
+es en el index, pero bueno lo deje para entender como funciona a modo de ejemplo no te vuelvas loco si no podes con eso je*/
+/* Media Queries */
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 564px) {
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-link {
+        margin: 1px 0;
+    }
+}
+
+/* Estilo para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 320px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: auto;
+
+    }
+
+    .nav-link {
+        margin: auto 0;
+        padding: auto 0;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}

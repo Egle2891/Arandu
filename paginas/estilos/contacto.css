@@ -1,0 +1,105 @@
+.float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+
+}
+.fa-whatsapp{
+    font-size: 60px;
+
+}
+.float:hover{
+background-color: #28e76e;
+}
+
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    background-color: #f5f5f5; /* Color de fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    align-items: center; /* Centra el formulario verticalmente */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+}
+
+/* Estilo para el formulario */
+.form-register {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%;
+    max-width: 500px; /* Máximo ancho del formulario */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo para el título del formulario */
+.form-register h4 {
+    margin-top: 0;
+    color: #333; /* Color de texto oscuro */
+    text-align: center; /* Centra el texto del título */
+    font-size: 24px;
+}
+
+/* Estilo para los campos de entrada */
+.controls {
+    display: block; /* Hace que cada campo ocupe toda la línea */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Espacio entre los campos */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados en los campos */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    font-size: 16px; /* Tamaño de fuente más grande para los campos */
+}
+
+/* Estilo específico para el área de texto */
+textarea.controls {
+    height: 150px; /* Altura específica para el área de texto */
+    resize: vertical; /* Permite el redimensionamiento vertical */
+    width: 460px;
+}
+
+/* Estilo para el botón de envío */
+.botons {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Color del texto blanco */
+    border: none; /* Elimina el borde predeterminado */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border-radius: 4px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    width: 100%; /* Botón ocupa todo el ancho del formulario */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.botons:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el cursor */
+}
+
+
+.contacto1 {
+    color: #000000;
+    text-decoration: none;
+}    
+    
+ 
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+        
+}
