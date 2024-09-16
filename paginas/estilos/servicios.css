@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.menu {
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  position: relative;
+  margin: 10px 0;
+}
+
+.menu a.service {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a.service:hover {
+  background-color: #576271;
+  color: #fff;
+}
+
+.description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 200px; /* Desplazamos la descripción al costado */
+  width: 300px; /* Ancho de la descripción */
+  padding: 15px;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.menu ul li:hover .description {
+  display: block;
+}
+
+.description p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.description ul li {
+  margin-bottom: 5px;
+}

@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Underline;
     line-height: 1.6;
     background-color: #f4f4f4;
     height: 100%;
@@ -38,7 +38,7 @@ header iframe.menu {
     display: grid;
     color: rgb(0, 0, 0);
     grid-template-columns: auto;
-    justify-content: end;    
+    justify-content: end;   
 }           
 main {
     background-color: #ffffff;

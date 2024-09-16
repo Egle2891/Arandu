@@ -3,10 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Empresa</title>
 </head>
 <body>
-    <h1>Nuestra empresa tiene una cultura de trabajo asi que no molesten</h1>
-    <!-- mas de lo mismo acomodale a tu gusto-->
+    <div class="container">
+        <header>
+            <h1>Constructora ARANDU</h1>
+            <h2>Especialistas en la construcción de obras industriales, comerciales y civiles.</h2>
+        </header>
+
+        <div class="content">
+            <div class="main-text">
+                <p>Constructora ARANDU provee soluciones de excelencia en el estudio, diseño y desarrollo de proyectos industriales y comerciales, destacándose en el área de la construcción de infraestructuras productivas y de servicios.</p>
+                
+                <h3>NUESTRA MISIÓN</h3>
+                <p>Otorgar un servicio constructivo integral, diseñando y ejecutando soluciones para satisfacer las necesidades que los proyectos de nuestros clientes requieren.</p>
+
+                <h3>NUESTRA VISIÓN</h3>
+                <p>Ser reconocida en el área industrial y comercial de nuestro país por el servicio entregado en el desarrollo y la construcción de los proyectos de nuestros clientes.</p>
+            </div>
+
+            <div class="side-box">
+                <h3>EXPERIENCIA</h3>
+                <h3>CREATIVIDAD</h3>
+                <h3>CAPACIDAD DE RESPUESTA</h3>
+
+                <ul class="services-list">
+                    <li><strong/>Construcción de Plantas de Producción</strong></li>
+                    <li>Construcción de Edificaciones comerciales</li>
+                    <li>Construcción de Oficinas corporativas</li>
+                    <li>Construcción de Centros de distribución</li>
+                    <li>Construcción de Bodegas o Galpones</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #f9a828; /* Color Naranja */
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text {
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-text h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.side-box {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 4px solid #f9a828; /* Color Naranja */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.side-box h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.services-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #f9a828; /* Color Naranja */
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .main-text, .side-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+</style>
