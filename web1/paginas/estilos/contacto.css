@@ -1,0 +1,232 @@
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+
+}
+
+.fa-whatsapp {
+    font-size: 60px;
+
+}
+
+.float:hover {
+    background-color: #28e76e;
+}
+
+
+body {/*imagen de fondo*/
+    background-image: url('/paginas/fotos/banner1.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
+    /*ajustes generales*/
+    font-family: Arial, sans-serif;    
+    background-color: #f5f5f5;    
+    margin: 0;
+    padding: 0;
+}
+/*el css lo organice por segmentos ordener y despues pintar, con algunas excepciones */
+h2 {            
+    background-color:rgba(203, 247, 170, 0.6);
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.principal {
+    
+    display: grid;     
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    gap: 2px;
+    
+}
+.titulo-parrafo{
+    width: 70%;
+    background-color: #41ec80;
+
+}
+.parrafo {    
+    margin: 5px;
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color:rgba(249, 249, 249, 0.5);
+    grid-row: 1;
+    grid-column: 1;
+}
+ul,li{
+    font-weight: bold;
+    margin: 10px;
+}
+p{           
+    font-weight: bold;
+    color: black;
+}
+
+.referencia-contacto {
+    background-color:rgba(120, 250, 5, 0.1);
+    grid-row: 2;
+    grid-column: 2;
+    gap: 5px;
+    
+}
+.contacto1{          
+    background-color:rgba(120, 250, 5, 0.5) ;
+}
+.info-contacto{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto) ;    
+}
+h3{
+    text-align: center;
+    align-items: center;
+    grid-column: span 2;
+    grid-row: 1;
+    margin: 5px;
+}
+.Telefono{
+    grid-row: 2;
+    grid-column: span 2;    
+    margin: 10px;
+}
+.Direccion{
+    grid-row: 3;
+    grid-column: span 2;
+    margin: 10px;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+.Enlaces-ref{
+    margin: 10px;
+     
+    grid-row: 4;
+    grid-column: 1;
+}
+.Enlaces-ref2{
+    margin: 10px;
+      
+    grid-row: 5;
+    grid-column: 1;
+}
+ 
+ 
+.form {
+     
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.iframe {
+     
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    margin: 5px;
+    height: 100%;
+    background-color:rgba(249, 249, 249, 0.2);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+
+
+.form-group1 {
+    color: #0f0f0f; 
+    font-weight: bold;  
+    width: 80%;
+    grid-row: 2;
+    grid-column: span 2;
+}
+
+.form-group2 {
+    font-weight: bold;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.form-group3 {
+    font-weight: bold;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.form-group4 {
+    font-weight: bold;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.form-group5 {
+    
+    font-weight: bold;
+    grid-row: 4;
+    grid-column: 2;
+}
+
+
+button {    
+    background-color: #ff9800;       
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    grid-column: span 2;
+    grid-row: 5;
+    width: 80%; 
+    height: 50px;
+    margin: 5px;   
+} 
+.enviar{
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #f8db04;
+}
+
+.titulo-form {
+    grid-column: span 2;
+    grid-row: 1;
+    display: flex;          
+}
+  
+
+textarea {     
+    resize: none;
+    grid-row: 1;
+    grid-column: span 2;
+    width: 100%;
+    height: 230px;
+}
+input {
+    display: flex;
+    width: 100%;
+    height: 25px;
+}
+
+.bi bi-chat {
+    grid-row: 1;
+    grid-column: 1;          
+}

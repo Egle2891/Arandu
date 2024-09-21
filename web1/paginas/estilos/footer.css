@@ -10,6 +10,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 40px;
     background-color: rgb(0, 0, 0); /* Fondo del footer */
     color: rgb(255, 255, 255); /* Color del texto */
     text-align: center; /* Centra el texto dentro del footer */

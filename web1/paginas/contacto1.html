@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .contacto{
+            
+            width: 100%;
+            position: relative;
+            background-color: rgb(236, 145, 145);
+            color: white;
+        }
+        a {
+             
+            color: white;
+        }
+        h2 {
+            background-color: aquamarine;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-register {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row: auto auto auto auto auto;
+        }
+         .Mensaje{
+            background-color: black;
+            resize: none; 
+            height: 150px; 
+            width: 100%;
+         }
+         
+        .botons {      
+            position: absolute;      
+            bottom: 0;
+            right: 0;
+            width: 40%;
+            text-align: center;
+            padding: 10px;
+            background-color: aqua;                         
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="contacto">
+        <h2>
+            <span>ENVÍANOS TUS CONSULTAS</span>
+        </h2>
+        <form class="form-register" action="https://formspree.io/f/xpwanrqg" method="post">
+            <div>
+                <p>Nombre y apellido</p>
+                <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <p>teléfono</p>
+                <input class="controls" type="tel" name="Contacto" id="Contacto" placeholder="Contacto">
+            </div>
+            <div>
+                <p>E-mail</p>
+                <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo">
+            </div>
+            <div>
+                <p >Mensaje</p>
+                <textarea class="Mensaje" class="controls" name="message" placeholder="Asunto"></textarea>
+            </div>
+            <input class="botons" type="submit" value="Enviar consulta">
+        </form>
+        <p>¿Buscas trabajo u ofreces un producto/servicio? <a href="#" class="text">Envíanos tus datos aquí →</a></p>        
+    </section>
+
+    <!-- hay dos ojas de contactos ambos tienen un proposito
+     ojas de contacto1 seria para usarlo con las otras paginas por ejemplo  
+     arquitectos o ideas de proyectos o cambiando el css para adaptarlo en esas paginas..
+     
+     y contacto todavia no termine de persar bien para agregarle todos los recursos como enlaces contacto mapa,
+     referencia o alguna noticia para que convensa al cliente de contactarse
+     (" todavia me falta terminar como me dijiste que queres hacer algo hay va.. espero terminar con la pagina en la semana ")-->
+
+
+</body>
+
+</html>

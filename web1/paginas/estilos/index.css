@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {/*ajustes de imagen de fondo*/
+    background-image: url('/paginas/fotos/banner1.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center;
+    /*ajustes generales*/
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;     
+    height: 100vh; /* Cambiado a 100vh para ocupar toda la ventana */
+    display: grid;    
+    grid-template-rows: 7% 4% auto 10%; /* Ajustado para las filas */
+    gap: 0;
+    overflow: hidden; 
+     
+}
+
+header {      
+    grid-row: 1;
+    height: 100%;    
+    width: 100%;
+}
+.menu{
+    height: 100%;
+} 
+header iframe.menu {
+     
+    width: 100%;
+    height: 100%;  
+    border: none;      
+}
+
+.container {
+     
+    height: 100%;
+    background-color: rgb(108, 107, 101);
+}
+
+.trabajo {
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    display: flex; /* Cambiado a flex para un mejor alineamiento */
+    justify-content: flex-end;    
+}  
+
+.trabajo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(108, 107, 101);
+}
+
+main{
+    grid-column: 1;
+    grid-row: 3;         
+    height: 100%;
+}
+.paginas{
+    width: 100%;
+    height: 100%;
+}
+ 
+.footer-h{          
+    grid-row: 4;
+    width: 100%;
+} 
+.footer{    
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+/* Marcos las Media Queries abajo, realmente no tengo idea si funciona bien o no.. El lugar donde las tengo que colocar
+es en el index, pero bueno lo deje para entender como funciona a modo de ejemplo no te vuelvas loco si no podes con eso je*/
+/* Media Queries */
+
+/* Estilo para pantallas pequeñas */
+/*@media (max-width: 564px) {
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-link {
+        margin: 1px 0;
+    }
+}
+
+/* Estilo para pantallas muy pequeñas (teléfonos) */
+/*@media (max-width: 320px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: auto;
+
+    }
+
+    .nav-link {
+        margin: auto 0;
+        padding: auto 0;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+    */ 
